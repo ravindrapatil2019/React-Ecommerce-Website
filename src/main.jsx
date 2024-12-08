@@ -14,7 +14,7 @@ import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import OrdersPage from "./pages/OrdersPage.jsx";
 import FavoriteProductsPage from "./pages/FavoriteProductsPage.jsx";
-import SignUpPage from "./pages/SignupPage.jsx";
+import SignUpPage from "./pages/SignUpPage.jsx";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage.jsx";
 import ProtectedRoute from "./components/Common/ProtectedRoute.jsx";
 
