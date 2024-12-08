@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { toTitleCase } from "../../utils/util";
 import StarRating from "../Product/StarRating";
 import FavoriteService from "../../services/FavoriteService";
+import Button from "../Button/Button";
 const FavoriteProducts = () => {
   FavoriteService.getOrders();
   const favoriteProducts = useSelector(
@@ -38,7 +39,14 @@ const FavoriteProducts = () => {
             perferendis ut, neque unde.
           </p>
 
-          <NavLink to={"/products"}>Add Products</NavLink>
+          {/* <NavLink to={"/products"}>Add Products</NavLink> */}
+          <Button
+            className="btn-link btn-link-1 m-25"
+            to="/products"
+            isNavLink={true}
+          >
+            Add Products
+          </Button>
         </div>
       ) : (
         <div className="checkout-container-parent">

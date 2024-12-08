@@ -26,41 +26,43 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2 className="form-title">Log in with</h2>
-      <SocialLogin />
+    <div className="login-container-parent">
+      <div className="login-container">
+        <h2 className="form-title">Log in with</h2>
+        <SocialLogin />
 
-      <p className="separator">
-        <span>or</span>
-      </p>
+        <p className="separator">
+          <span>or</span>
+        </p>
 
-      {/* Update the form to use onSubmit */}
-      <form action="#" className="login-form" onSubmit={handleLogin}>
-        <InputField
-          type="email"
-          placeholder="Email address"
-          icon="fa-envelope-o"
-        />
-        <InputField type="password" placeholder="Password" icon="fa-lock" />
+        {/* Update the form to use onSubmit */}
+        <form action="#" className="login-form" onSubmit={handleLogin}>
+          <InputField
+            type="email"
+            placeholder="Email address"
+            icon="fa-envelope-o"
+          />
+          <InputField type="password" placeholder="Password" icon="fa-lock" />
 
-        <NavLink to="/forgotPassword" className="forgot-password-link">
-          Forgot password?
-        </NavLink>
-        {/* <button type="submit" className="login-button">
+          <NavLink to="/forgotPassword" className="forgot-password-link">
+            Forgot password?
+          </NavLink>
+          {/* <button type="submit" className="login-button">
           Log In
         </button> */}
 
-        <Button className="btn-link btn-link-1 m-25 form-btn" type="submit">
-          Log In
-        </Button>
-      </form>
+          <Button className="btn-link btn-link-1 m-25 form-btn" type="submit">
+            Log In
+          </Button>
+        </form>
 
-      <p className="signup-prompt">
-        Don&apos;t have an account?{" "}
-        <NavLink to="/signup" className="signup-link">
-          Sign up
-        </NavLink>
-      </p>
+        <p className="signup-prompt">
+          Don&apos;t have an account?{" "}
+          <NavLink to="/signup" className="signup-link">
+            Sign up
+          </NavLink>
+        </p>
+      </div>
     </div>
   );
 };

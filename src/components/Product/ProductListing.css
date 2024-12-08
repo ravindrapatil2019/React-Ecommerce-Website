@@ -1,5 +1,7 @@
 .product-container-parent {
-    padding: 120px 50px 0px 50px;
+    padding  : 120px 10px 0px 10px;
+    max-width: 1290px;
+    margin   : 0 auto;
 }
 
 .product-container {
@@ -196,4 +198,44 @@ button.addToFavorite .fa-heart {
     font-size  : 1.2rem;
     color      : #495057;
     font-weight: 500;
+}
+
+.pagination {
+    padding        : 10px;
+    margin         : 15px 0;
+    display        : flex;
+    justify-content: center;
+}
+
+.pagination>button {
+    padding         : 15px 20px;
+    border          : 1px solid rgb(229, 231, 235);
+    cursor          : pointer;
+    background-color: #FFF;
+}
+
+.pagination>button:not(.pagination__disable):hover {
+    background-color: #000;
+    color           : #FFF;
+}
+
+.pagination>button:first-child,
+.pagination>button.pagination-buttons {
+    border-right: none;
+}
+
+/* .pagination__disable {
+    opacity: 0;
+} */
+
+.pagination>button.pagination-buttons.pagination__selected {
+    background-color: #000;
+    color           : #FFF;
+    cursor          : default;
+}
+
+.pagination>button.pagination__disable {
+    background-color: #FFF;
+    cursor          : default;
+    color           : rgb(220, 220, 220)
 }

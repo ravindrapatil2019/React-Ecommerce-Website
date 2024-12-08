@@ -1,13 +1,17 @@
+.login-container-parent {
+    padding-top: 120px;
+    position   : relative;
+}
+
 .login-container {
-    margin       : 0 auto;
-    margin-top   : 0px;
-    max-width    : 450px;
-    border-radius: 0.5rem;
-    margin-top   : 120px;
-    background   : #FFF;
-    border       : 1px solid rgb(229 231 235);
-    padding      : 30px;
-    box-shadow   : 0 25px 25px rgba(0, 0, 0, 0.1);
+    margin           : 0 auto;
+    margin-top       : 0px;
+    max-width        : 450px;
+    border-radius    : 0.5rem;
+    background       : #FFF;
+    border           : 1px solid rgb(229 231 235);
+    padding          : 30px;
+    /*  box-shadow   : 0 25px 25px rgba(0, 0, 0, 0.1); */
 }
 
 .login-container .form-title {

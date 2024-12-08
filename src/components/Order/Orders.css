@@ -1,8 +1,8 @@
 /* Cart Page Container */
 .cart-container {
     margin          : 0 auto;
-    padding         : 40px 40px 0px 40px;
-    background-color: #fff;
+    padding         : 40px 50px 0px 50px;
+    background-color: transparent;
     text-align      : center;
     padding-top     : 120px;
     display         : flex;
@@ -11,13 +11,13 @@
 }
 
 .empty-cart-container {
-    background   : #FFF;
-    border       : 1px solid rgb(229 231 235);
-    padding      : 60px;
-    box-shadow   : 0 25px 25px rgba(0, 0, 0, 0.1);
-    margin-top   : 30px;
-    border-radius: 20px;
-    width        : 100%;
+    background      : #FFF;
+    border          : 1px solid rgb(229 231 235);
+    padding         : 60px;
+    /* box-shadow   : 0 25px 25px rgba(0, 0, 0, 0.1); */
+    margin-top      : 30px;
+    border-radius   : 0.5rem;
+    width           : 100%;
 }
 
 .empty-cart-container p {

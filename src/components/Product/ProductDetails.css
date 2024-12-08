@@ -21,22 +21,24 @@
     display         : flex;
     justify-content : space-between;
     align-items     : flex-start;
-    background-color: transparent;
+    background-color: #FFF;
     position        : relative;
     width           : 100%;
     border-top      : none;
     border-bottom   : none;
+    border          : 1px solid rgb(229 231 235);
 }
 
 .product-details-container .cart-item .image-container {
-    border       : 1px solid #32bde84d;
-    padding      : 10px;
-    border-radius: 10px;
-    width        : 50%;
-    max-height   : none;
-    text-align   : center;
-    height       : auto;
-    min-height   : 420px;
+    border          : 1px solid #32bde84d;
+    padding         : 10px;
+    border-radius   : 10px;
+    width           : 50%;
+    max-height      : none;
+    text-align      : center;
+    height          : auto;
+    min-height      : 420px;
+    background-color: #FFF;
 }
 
 .product-details-container .cart-item .image-container img {
@@ -122,44 +124,4 @@
 
 .product-details-container .category-title {
     font-weight: bold;
-}
-
-.pagination {
-    padding        : 10px;
-    margin         : 15px 0;
-    display        : flex;
-    justify-content: center;
-}
-
-.pagination>button {
-    padding         : 15px 20px;
-    border          : 1px solid rgb(229, 231, 235);
-    cursor          : pointer;
-    background-color: #f7f7f7;
-}
-
-.pagination>button:not(.pagination__disable):hover {
-    background-color: #000;
-    color           : #FFF;
-}
-
-.pagination>button:first-child,
-.pagination>button.pagination-buttons {
-    border-right: none;
-}
-
-/* .pagination__disable {
-    opacity: 0;
-} */
-
-.pagination>button.pagination-buttons.pagination__selected {
-    background-color: #000;
-    color           : #FFF;
-    cursor          : default;
-}
-
-.pagination>button.pagination__disable {
-    background-color: rgb(220, 220, 220);
-    cursor          : default;
-    opacity         : 0.2;
 }

@@ -193,7 +193,7 @@ const Cart = () => {
                   {/*  <button className="checkout-button">
                     Proceed to Checkout
                   </button> */}
-                  <Button className="btn-link btn-link-1 checkout-btn disabled">
+                  <Button className="btn-link btn-link-1 m-25 checkout-btn disabled">
                     Proceed to Checkout
                   </Button>
                 </section>
