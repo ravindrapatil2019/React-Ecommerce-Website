@@ -1,0 +1,85 @@
+.search-bar-container-parent {
+    width   : 600px;
+    position: relative;
+}
+
+.search-bar-container {
+    position: relative;
+    height  : auto;
+    width   : 600px;
+    display : flex;
+}
+
+.suggestions-list {
+    position  : fixed;
+    z-index   : 1;
+    width     : 600px;
+    overflow-y: auto;
+    max-height: 470px;
+    height    : auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.suggestions-dropdown {
+    border          : 1px solid rgb(209 213 219);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(0, 0, 0);
+    border-top      : none;
+    border-bottom   : none;
+    border-right    : none;
+}
+
+.header-container a.suggestion-link {
+    background-color: #FFF;
+    border-bottom   : 1px solid rgb(209 213 219);
+    color           : #000;
+    justify-content : left;
+}
+
+.header-container .search-button {
+    background: none;
+    color     : #000;
+    position  : absolute;
+    right     : 10px;
+    padding   : 0;
+    width     : auto;
+    min-width : auto;
+    top       : 14px;
+}
+
+.search-bar {
+    all       : unset;
+    right     : 0px;
+    height    : 45px;
+    width     : 100%;
+    display   : block;
+    padding   : 0 30px 0 20px;
+    outline   : none;
+    font-size : 16px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    color     : rgb(17 24 39);
+    position  : relative;
+    border    : 1px solid rgb(209 213 219);
+}
+
+.search-popup {
+    max-height      : calc(100vh - 75px);
+    background-color: #FFF;
+    overflow-y      : auto;
+}
+
+.search-link {
+    font-size  : 1.125em;
+    font-family: 'AndesBold';
+    color      : #083458;
+    display    : block;
+    padding    : 7px 10px 7px;
+    line-height: 20px;
+}
+
+.search-link.mhover {
+    background-color: #872B90;
+    color           : #FFF;
+}

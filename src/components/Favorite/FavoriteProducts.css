@@ -1,0 +1,181 @@
+.favorite-products-container {
+    margin          : 0 auto;
+    padding         : 40px 40px 0px 40px;
+    background-color: #fff;
+    text-align      : center;
+    padding-top     : 120px;
+    display         : flex;
+    width           : 100%;
+    justify-content : space-between;
+}
+
+
+.favorite-products-container .empty-cart-container {
+    background   : #FFF;
+    border       : 1px solid rgb(229 231 235);
+    padding      : 60px;
+    box-shadow   : 0 25px 25px rgba(0, 0, 0, 0.1);
+    margin-top   : 30px;
+    border-radius: 20px;
+}
+
+.favorite-products-container .circle-button-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 10px;
+    height         : 100%;
+}
+
+.favorite-products-container .empty-cart-container p {
+    margin-top: 20px;
+}
+
+.favorite-products-container .empty-cart-container a {
+    margin-top      : 30px;
+    display         : inline-block;
+    background-color: #1f2937;
+    color           : #FFF;
+    padding         : 10px 20px;
+    text-transform  : uppercase;
+    border-radius   : 5px;
+    font-size       : 16px;
+}
+
+.favorite-products-container .empty-cart-container a:hover {
+    background-color: #000;
+}
+
+.favorite-products-container h1 {
+    font-size    : 32px;
+    color        : #333;
+    margin-bottom: 30px;
+    font-weight  : bold;
+}
+
+.favorite-products-container .cart-items {
+    display  : block;
+    width    : 100%;
+    max-width: 1280px;
+    margin   : 0 auto;
+}
+
+.favorite-products-container .cart-item {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : flex-start;
+    background-color: transparent;
+    position        : relative;
+    width           : 100%;
+    border-top      : 1px solid rgb(229 231 235);
+    border-bottom   : 1px solid rgb(229 231 235);
+    padding         : 20px 0;
+}
+
+.favorite-products-container .cart-item .image-container {
+    width          : 200px;
+    border         : 1px solid #32bde84d;
+    padding        : 10px;
+    border-radius  : 10px;
+    height         : 200px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.favorite-products-container .cart-item img {
+    max-height   : 150px;
+    border       : none;
+    padding      : 0;
+    border-radius: 0;
+    max-width    : 100%;
+    width        : auto;
+    height       : auto;
+}
+
+.favorite-products-container .item-image img {
+    width        : 120px;
+    height       : 120px;
+    object-fit   : cover;
+    border-radius: 8px;
+}
+
+.favorite-products-container .item-details {
+    flex          : 1;
+    text-align    : left;
+    padding-left  : 20px;
+    padding-top   : 0px;
+    padding-bottom: 0px;
+    padding-right : 30px;
+}
+
+.favorite-products-container .item-details h3 {
+    font-size    : 20px;
+    color        : #333;
+    margin-bottom: 10px;
+}
+
+.favorite-products-container .item-details p {
+    font-size: 16px;
+    color    : #555;
+}
+
+.favorite-products-container .quantity-control {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+    margin     : 10px 0;
+}
+
+.favorite-products-container .remove-button {
+    padding         : 0;
+    border          : none;
+    cursor          : pointer;
+    transition      : background-color 0.2s ease;
+    background-color: transparent;
+    color           : rgb(75 85 99);
+    font-size       : 20px;
+    position        : absolute;
+    right           : 0;
+    top             : 20px;
+    width           : 20px;
+    height          : 20px;
+    justify-content : center;
+    align-items     : center;
+    display         : flex;
+}
+
+.favorite-products-container .remove-button:hover {
+    color: #d32f2f;
+}
+
+.favorite-products-container .header {
+    height       : auto;
+    overflow     : hidden;
+    margin-bottom: 10px;
+    font-size    : 1.125rem;
+    line-height  : 1.75rem;
+    font-weight  : bold;
+    color        : #000;
+}
+
+.favorite-products-container .meta {
+    margin-top: 20px
+}
+
+.favorite-products-container .meta.price {
+    font-size  : 18px;
+    color      : rgb(50 189 232);
+    font-weight: bold;
+    margin     : 20px 0 0;
+}
+
+.favorite-products-container .quantity {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+}
+
+.favorite-products-container .category-title {
+    font-weight: bold;
+}

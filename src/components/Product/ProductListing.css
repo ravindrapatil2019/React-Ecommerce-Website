@@ -1,0 +1,199 @@
+.product-container-parent {
+    padding: 120px 50px 0px 50px;
+}
+
+.product-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 10px;
+    justify-content: center;
+    padding-top    : 0px;
+}
+
+.product {
+    position: relative;
+}
+
+.cards .card {
+    max-width     : 100%;
+    position      : relative;
+    display       : flex;
+    flex-direction: column;
+    width         : 290px;
+    min-height    : 0;
+    background    : #fff;
+    border-radius : 5px;
+    border        : 1px solid rgb(229 231 235);
+    transition    : background-color 0.3s,
+        transform 0.2s;
+    overflow: hidden;
+}
+
+.cards .card:hover {
+    background-color: #FFF;
+    transform       : scale(1.01);
+    border-color    : #000;
+}
+
+.cards .card .image {
+    height    : 250px;
+    padding   : 30px 20px 20px;
+    background: #fff;
+    margin    : auto;
+    position  : relative;
+    display   : block;
+}
+
+.cards .card .meta {
+    color         : rgb(155 155 155);
+    text-transform: uppercase;
+    line-height   : 1rem;
+    font-weight   : 600;
+    font-size     : 14px;
+}
+
+button.circle-button {
+    width           : 30px;
+    height          : 30px;
+    background-color: rgb(247 247 247);
+    border-radius   : 50%;
+    flex            : 0 0 30px;
+    border          : 1px solid rgb(229 231 235);
+    padding         : 0;
+    font-size       : 20px;
+    cursor          : pointer;
+}
+
+button.circle-button:hover {
+    background-color: #FFF;
+    border-color    : rgb(50 189 232);
+    color           : #000;
+}
+
+button.circle-button span {
+    margin-top: -4px;
+}
+
+.cards .card .image img {
+    max-height: 100%;
+    max-width : 100%;
+    height    : auto;
+    width     : auto;
+}
+
+.cards .card .content {
+    flex-grow       : 1;
+    border          : none;
+    border-top-width: medium;
+    border-top-style: none;
+    border-top-color: currentcolor;
+    border-top      : 1px solid rgba(34, 36, 38, .1);
+    padding         : 10px;
+}
+
+.cart-actions {
+    position  : relative;
+    color     : #000;
+    text-align: center;
+    height    : 45px;
+}
+
+
+button.addToFavorite {
+    all            : unset;
+    width          : 20px;
+    height         : 20px;
+    position       : absolute;
+    z-index        : 1;
+    right          : 7px;
+    top            : 7px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 20px;
+    color          : rgb(241 0 145);
+}
+
+button.addToFavorite:hover {
+    color: rgb(241 0 145);
+}
+
+button.addToFavorite .fa-heart {
+    animation: blast 0.5s ease-in-out;
+}
+
+@keyframes blast {
+    0% {
+        transform: scale(1);
+        filter   : drop-shadow(0 0 0 rgba(255, 0, 0, 0));
+    }
+
+    50% {
+        transform: scale(1.5);
+        filter   : drop-shadow(0 0 10px rgba(241 0 145, 0.4)) drop-shadow(0 0 20px rgba(241 0 145,
+                    0.8));
+    }
+
+    100% {
+        transform: scale(1);
+        filter   : drop-shadow(0 0 0 rgba(255, 0, 0, 0));
+    }
+}
+
+.cards .card .content .header {
+    height       : 50px;
+    overflow     : hidden;
+    margin-bottom: 10px;
+    font-size    : 1.125rem;
+    line-height  : 1.75rem;
+    font-weight  : bold;
+    color        : #000;
+    margin-top   : 10px;
+}
+
+.cards .card .meta.price {
+    font-size  : 18px;
+    color      : rgb(50 189 232);
+    font-weight: bold;
+    margin     : 20px 0;
+}
+
+.no-products-message {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: #FFF;
+
+    border: 1px solid rgb(229 231 235);
+
+    padding: 60px;
+
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+
+    margin-top: 30px;
+
+    border-radius: 20px;
+
+    width: 100%;
+
+}
+
+.no-products-message i {
+    font-size    : 3rem;
+    color        : #6c757d;
+    margin-bottom: 15px;
+}
+
+.no-products-message p {
+    margin     : 0;
+    font-size  : 1.2rem;
+    color      : #495057;
+    font-weight: 500;
+}

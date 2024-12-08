@@ -1,0 +1,45 @@
+/*Footer*/
+.footer-container {
+    display        : flex;
+    padding-top    : 2.5rem;
+    padding-bottom : 2.5rem;
+    justify-content: space-between;
+    padding-left   : 2.5rem;
+    padding-right  : 2.5rem;
+}
+
+.footer-top-container {
+    background   : #f5f5f5;
+    margin       : 50px 50px 0;
+    padding      : 50px;
+    border-radius: 20px;
+    text-align   : center;
+    border       : 1px solid rgb(229 231 235);
+}
+
+.footer-top-container h2 {
+    font-size     : 30px;
+    font-weight   : bold;
+    text-align    : center;
+    padding-bottom: 50px;
+}
+
+.footer-bottom-container {
+    display: flex;
+    width  : 100%;
+    gap    : 1%;
+}
+
+.footer-bottom-container .text-container {
+    padding: 0 10px;
+}
+
+.footer-bottom-container .text-container h3 {
+    font-size    : 16px;
+    font-weight  : bold;
+    margin-bottom: 10px;
+}
+
+.footer-bottom-container .text-container img {
+    height: 100px;
+}

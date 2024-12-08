@@ -1,0 +1,74 @@
+/* Contact Container */
+.contact-container {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    padding         : 120px 0px 0 0;
+    background-color: #FFF;
+
+}
+
+.contact-card {
+    background-color: #FFF;
+    border-radius   : 10px;
+    max-width       : 450px;
+    width           : 100%;
+    text-align      : center;
+    border          : 1px solid rgb(229 231 235);
+    padding         : 30px;
+    box-shadow      : 0 25px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    margin-bottom: 20px;
+    font-size    : 28px;
+    font-weight  : bold;
+    color        : #333;
+}
+
+.contact-form {
+    display       : flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding      : 12px;
+    margin-bottom: 20px;
+    border       : 1px solid #ddd;
+    border-radius: 5px;
+    font-size    : 16px;
+    outline      : none !important;
+}
+
+.input-field:focus {
+    outline: 1px solid blue !important;
+}
+
+.message-area {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    all             : unset;
+    width           : 200px;
+    margin          : 0 auto;
+    display         : inline-block;
+    background-color: #1f2937;
+    color           : #FFF;
+    padding         : 10px 20px;
+    text-transform  : uppercase;
+    border-radius   : 5px;
+    cursor          : pointer;
+    font-size       : 16px;
+}
+
+.submit-button:hover {
+    background-color: #000;
+}
+
+/* Error message */
+.error-message {
+    color        : red;
+    margin-bottom: 10px;
+}

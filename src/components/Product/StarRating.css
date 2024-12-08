@@ -1,0 +1,27 @@
+.star-rating {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 5px;
+}
+
+.star {
+    font-size: 1rem;
+    margin   : 0 2px;
+}
+
+.star.full {
+    color: gold;
+}
+
+.star.half {
+    color: gold;
+}
+
+.star.empty {
+    color: lightgray;
+}
+
+.total-reviews {
+    padding-left: 10px;
+    color       : #000;
+}

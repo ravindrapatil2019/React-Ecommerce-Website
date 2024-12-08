@@ -1,0 +1,29 @@
+.homepage {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 20px;
+}
+
+.product-grid {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap                  : 20px;
+}
+
+.product-card {
+    background   : #fff;
+    border       : 1px solid #ddd;
+    border-radius: 5px;
+    padding      : 10px;
+    text-align   : center;
+}
+
+.product-card img {
+    max-width    : 100%;
+    height       : auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,43 @@
+.hero {
+    color          : #fff;
+    text-align     : center;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.hero-content h2 {
+    font-size  : 3.75rem;
+    margin     : 0;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.hero-content {
+    position  : absolute;
+    bottom    : 50px;
+    left      : 0;
+    text-align: left;
+    width     : 100%;
+}
+
+.hero-content-parent {
+    max-width    : 1340px;
+    position     : relative;
+    margin-top   : 120px;
+    border-radius: 10px;
+    overflow     : hidden;
+}
+
+.hero-content-parent img {
+    display: block;
+    width  : 1280px;
+}
+
+.hero-content p {
+    font-size  : 1.5rem;
+    margin     : 20px 0;
+    line-height: 29px;
+    width      : 350px;
+}
