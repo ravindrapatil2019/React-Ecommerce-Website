@@ -84,6 +84,13 @@ const ProductComponent = () => {
     ) {
       setPage(selectedPage);
     }
+
+    setTimeout(() =>
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    );
   };
 
   if (products.length == 0) {
