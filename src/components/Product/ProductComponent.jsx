@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { updateCart, updateFavoriteCart } from "../../redux/productsSlice";
@@ -23,6 +23,10 @@ const ProductComponent = () => {
 
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    setPage(1);
+  }, [queryString, selectedCategory]);
+
   let filteredProducts = products?.filter(
     (product) =>
       product.title.toLowerCase().includes(queryString) ||
@@ -35,7 +39,8 @@ const ProductComponent = () => {
       lowerCategory === "" || product.category.toLowerCase() === lowerCategory
     );
   });
-
+  console.log(queryString, selectedCategory);
+  console.log(filteredProducts);
   const handleAddToCart = (event, product) => {
     event.stopPropagation();
     event.preventDefault();
