@@ -34,7 +34,7 @@
 .cards .card:hover {
     background-color: #FFF;
     transform       : scale(1.01);
-    border-color    : #000;
+    border-color    : rgba(0, 0, 0, 0.5);
 }
 
 .cards .card .image {
