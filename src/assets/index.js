@@ -1,11 +1,11 @@
 
 
-import payment from "./payment.webp";
-import productPayment from "./productPayment.webp";
+import payment from "./payment.png";
+import productPayment from "./productPayment.png";
 import homeBanner from "./homeBanner.jpg";
-import bannerOne from "./bannerOne.webp";
-import bannerTwo from "./bannerTwo.webp";
-import bannerThree from "./bannerThree.webp";
+import bannerOne from "./bannerOne.png";
+import bannerTwo from "./bannerTwo.png";
+import bannerThree from "./bannerThree.png";
 import bannerFour from "./bannerFour.png";
 
 export {
