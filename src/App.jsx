@@ -6,12 +6,15 @@ import Loader from "./components/Common/Loader";
 import { fetchProducts } from "./redux/productsSlice";
 import { useEffect } from "react";
 import AuthService from "./services/AuthService";
+import useScrollToTop from "./hooks/useScrollToTop";
+
 function App() {
   const dispatch = useDispatch();
   const { loading, error } = useSelector((state) => state.allProducts);
 
   // Bypassing the login process for testing purposes
   AuthService.login();
+  useScrollToTop();
 
   useEffect(() => {
     dispatch(fetchProducts());
